@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id" style="background-color:#0A0A0C;color-scheme:dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicycle.id — Products</title>
+    <style>html,body{background-color:#0A0A0C}</style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="/" class="logo"><span>B</span>icycle.id</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/products" class="active">Products</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <h3 class="section-title">Produk</h3>
+            <div class="project-grid stagger">
+                <div class="project-card">
+                    <div class="project-thumb">
+                         <img src="{{ url_for('static', filename='images/bmx1.jpg') }}" 
+                               alt="Web Portofolio">
+                    </div>
+                    <div class="project-body">
+                        <h4>BMX</h4>
+                        <p>Sepeda BMX yang tentunya banyak variasi nya.</p>
+                        <div class="project-tech">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-thumb">
+                       <img src="{{ url_for('static', filename='images/pixie.jpg') }}" 
+                             alt="Web Portofolio">
+                    </div>
+                    <div class="project-body">
+                        <h4>PIXIE</h4>
+                        <p>Cocok untuk olahraga dan flexing tentunya.</p>
+                        <div class="project-tech">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-thumb">
+                       <img src="{{ url_for('static', filename='images/lipat.jpg') }}" 
+                               alt="Web Portofolio">
+                    </div>
+                    <div class="project-body">
+                        <h4>Sepeda Lipat</h4>
+                        <p>Cocok untuk dibawa kemana-mana karena hemat tempat.</p>
+                        <div class="project-tech">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-thumb">
+                         <img src="{{ url_for('static', filename='images/kalcer1.jpg') }}" 
+                             alt="Web Portofolio">
+                    </div>
+                    <div class="project-body">
+                        <h4>Sepeda Kalcer</h4>
+                        <p>Cocok untukmu yang kalcer.</p>
+                        <div class="project-tech">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-thumb">
+                      <img src="{{ url_for('static', filename='images/sperpat.jpg') }}" 
+                         alt="Web Portofolio">
+                    <div class="project-body">
+                        <h4>Beberapa sperpat sepeda lainnya</h4>
+                        <div class="project-tech">
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Bicycle.id
+    </footer>
+</body>
+</html>

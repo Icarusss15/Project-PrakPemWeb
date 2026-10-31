@@ -1,24 +1,41 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" style="background-color:#0A0A0C;color-scheme:dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PrakPemWeb - Pertemuan 2</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicycle.id — Home</title>
+    <style>html,body{background-color:#0A0A0C}</style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header><h1>Struktur Project Flask</h1></header>
-  <main>
-    <section>
-      <h2>Struktur Folder:</h2>
-      <ul>
-        <li><strong>app.py</strong> - File utama aplikasi Flask</li>
-        <li><strong>templates/</strong> - Folder untuk file HTML</li>
-        <li><strong>static/css/</strong> - Folder untuk file CSS</li>
-        <li><strong>static/images/</strong> - Folder untuk gambar</li>
-      </ul>
-    </section>
-  </main>
-  <footer><p>Praktikum Pemrograman Web - Pertemuan 2</p></footer>
+    <header>
+        <a href="/" class="logo"><span>B</span>icycle.id</a>
+        <nav>
+            <a href="/" class="active">Home</a>
+            <a href="/about">About</a>
+            <a href="/products">Products</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-image">
+                <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Fahri">
+            </div>
+            <div class="hero-text">
+                <p class="tagline">Bicycle Shop</p>
+                <h2><span class="highlight"> Bicycle.id</span><br>
+                    <span class="typewriter">cari sepeda Impian mu disini.</span></h2>
+                <p>Web ini menyediakan beberapa katalog sepeda yang mungkin cocok  untuk .</p>
+            </div>
+        </section>
+
+    <footer>
+        &copy; 2026 Bicycle.id
+    </footer>
 </body>
 </html>
